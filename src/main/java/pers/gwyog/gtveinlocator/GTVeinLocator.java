@@ -17,11 +17,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import pers.gwyog.gtveinlocator.api.modhelpers.GT5ModHelper;
-import pers.gwyog.gtveinlocator.api.modhelpers.GT6ModHelper;
 import pers.gwyog.gtveinlocator.api.modhelpers.IGTModHelper;
-import pers.gwyog.gtveinlocator.config.ModConfig;
-import pers.gwyog.gtveinlocator.items.ItemVeinLocator;
-import pers.gwyog.gtveinlocator.util.GTOreLayerHelper;
 
 @Mod(modid = GTVeinLocator.MODID, name = GTVeinLocator.MODNAME, version = GTVeinLocator.VERSION, dependencies = "required-after:gregtech")
 public class GTVeinLocator {    
@@ -77,11 +73,7 @@ public class GTVeinLocator {
     }
     
     public void initGTHelper() {
-        try {
-            Class clazzGT6API = Class.forName("gregapi.GT_API");
-            GTVersion = "GT6";
-        } catch (ClassNotFoundException e) {}
-        gtModHelper = GTVersion.equals("GT6") ? new GT6ModHelper() : new GT5ModHelper();
+        gtModHelper = new GT5ModHelper();
     }
     
 }

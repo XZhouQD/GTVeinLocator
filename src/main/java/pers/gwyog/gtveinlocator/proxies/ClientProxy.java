@@ -1,6 +1,6 @@
 package pers.gwyog.gtveinlocator.proxies;
 
-import com.minimap.XaeroMinimap;
+import xaero.minimap.XaeroMinimap;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;

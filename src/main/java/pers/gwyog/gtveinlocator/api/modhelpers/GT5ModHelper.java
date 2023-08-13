@@ -161,7 +161,7 @@ public class GT5ModHelper implements IGTModHelper {
 
 	@Override
 	public int getCoordinateFromIndex(int index) {
-        return index>=0?(24+48*index):(40+48*index);
+        return 24+48*index;
 	}
 	
 	@Override

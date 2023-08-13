@@ -12,12 +12,8 @@ public class XaeroMinimapHelper {
     public static void init() {
         if (!Loader.isModLoaded("XaeroMinimap"))
             return;
-        xaeroMinimapHelper = new XaeroMinimapHelper1_11();
+        xaeroMinimapHelper = new XaeroMinimapHelper1_12();
         xaeroMinimapHelper.init();
-        if (failedCompat) {
-        	xaeroMinimapHelper = new XaeroMinimapHelper1_12();
-        	xaeroMinimapHelper.init();
-        }
     }
     
     @SideOnly(Side.CLIENT)
